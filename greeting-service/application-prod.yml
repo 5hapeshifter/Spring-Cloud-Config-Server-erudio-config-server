@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: greeting-service
+
+management:
+  endpoints: # Actuator configuration - estamos expondo um monte de configuracao que o actuator nos fornece
+    web:
+      exposure:
+        include:
+          - '*'
+
+greeting-service:
+  greeting: "Cia"
+  default-value: "Mondo"
